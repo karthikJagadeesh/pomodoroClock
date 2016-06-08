@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pomodoro Clock</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link href='index.css' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="index.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid text-center">
+  <p id="pomodoro">POMODORO</p>
+  <p id="timer">CLOCK</p>
+</div>
+<div class="hr"></div>
+<div class="row text-center" style="width: 350px; margin-top: 10px;">
+  <div class="col-xs-6">
+    <p>Break Length</p>
+    <button class="btn btn-default breakMinus"> - </button>
+    <p style="display:inline; padding: 5px; font-size: 15px;" id="breakLength">5</p>
+    <button class="btn btn-default breakPlus"> + </button>
+  </div>
+  <div class="col-xs-6">
+    <p>Session Length</p>
+    <button class="btn btn-default sessionMinus"> - </button>
+    <p style="display:inline; padding: 5px; font-size: 15px;" id="sessionLength">25</p>
+    <button class="btn btn-default sessionPlus"> + </button>
+  </div>
+</div>
+
+<div class="circle text-center">
+  <p class="text-center" id="message" style="padding-top: 45px; text-shadow: 0px 0px 5px white;">WORK</p>
+  <p class="text-center" id="countdown" style="margin-top:-20px; text-shadow: 0px 0px 5px white;">25:00</p>
+</div>
+
+<div class="row text-center" style="margin: 20px auto 30px auto; max-width:520px;">
+  <div class="col-xs-6">
+    <button class="btn btn-default start" style="background:none; border-radius:20px;width:80px; border: 1px solid black;">Start</button>
+  </div>
+  <div class="col-xs-6">
+    <button class="btn btn-default pause" style="background:none; border-radius:20px;width:80px; border: 1px solid black;">Stop</button>
+  </div>
+</div>
+<audio id="audio">
+  <source src="https://archive.org/download/TempleBellHugeSoundBible.com695883450/Temple Bell Huge-SoundBible.com-695883450.mp3" type="audio/mp3">
+</audio>
+  </body>
+</html>

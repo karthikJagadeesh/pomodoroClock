@@ -1,0 +1,111 @@
+body {
+  background-color: #ECEFF1;
+  font-family: 'Open Sans', helvetica, sans-serif;
+  font-weight: 400;
+}
+
+#pomodoro {
+  font-size: 50px;
+  color: #757575;
+  font-weight: 600;
+}
+
+#timer {
+  margin: -35px 0px 0px 10px;
+  font-size: 50px;
+  letter-spacing: 15px;
+  font-weight: 300;
+  color: #424242;
+}
+
+.hr {
+  border-bottom: 1px solid black;
+  margin: 0px 50px 0px 50px;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+  outline: 0 none;
+}
+
+.row {
+  margin: 0 auto;
+}
+
+.circle {
+  width: 250px;
+  height: 250px;
+  border-radius: 250px;
+  background-color: #ef5350;
+  margin: 20px auto 0px auto;
+  box-shadow: 0px 0px 15px #212121;
+  font-weight: 300;
+  font-size: 60px;
+  color: white;
+  animation-name: colorChange;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  animation-direction: alternate;
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: #ef5350;
+  }
+  25% {
+    background-color: #AB47BC;
+  }
+  50% {
+    background-color: #5C6BC0;
+  }
+  75% {
+    background-color: #29B6F6;
+  }
+  100% {
+    background-color: #26A69A;
+  }
+}
+
+-webkit-@keyframes colorChange {
+  0% {
+    background-color: #ef5350;
+  }
+  25% {
+    background-color: #AB47BC;
+  }
+  50% {
+    background-color: #5C6BC0;
+  }
+  75% {
+    background-color: #29B6F6;
+  }
+  100% {
+    background-color: #26A69A;
+  }
+}
+
+-moz-@keyframes colorChange {
+  0% {
+    background-color: #ef5350;
+  }
+  25% {
+    background-color: #AB47BC;
+  }
+  50% {
+    background-color: #5C6BC0;
+  }
+  75% {
+    background-color: #29B6F6;
+  }
+  100% {
+    background-color: #26A69A;
+  }
+}
+
+.btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+}
