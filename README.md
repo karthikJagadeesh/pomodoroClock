@@ -1,3 +1,3 @@
 # pomodoroClock
 
-Free Code Camp - project => Pomodoro Clock
+A simple pomodoro clock to help you manage time better. 
